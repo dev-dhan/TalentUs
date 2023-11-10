@@ -1008,7 +1008,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--gradient);
+  background-color: #000;
   padding: 50px;
   border-radius: 18px;
 
@@ -1017,11 +1017,10 @@ body {
 .banner-heading {
   font-size: 40px;
   color: #fff;
+  width: 80%;
 }
 
-.btn-banner:hover {
-  background-color: #000;
-}
+
 
 
 /*-----------------------------------*\
@@ -1051,7 +1050,7 @@ body {
 
 .footer-link { transition: var(--transition-1); }
 
-.footer-link:is(:hover, :focus) { color: var(--kappel); }
+.footer-link:is(:hover, :focus) { color: #fff; }
 
 .footer-list-title {
   color: var(--white);
@@ -1092,7 +1091,7 @@ body {
 .copyright { text-align: center; }
 
 .copyright-link {
-  color: var(--kappel);
+  color: var(--gradient);
   display: inline-block;
 }
 
@@ -1179,8 +1178,7 @@ body {
 
   .video .play-btn { padding: 25px; }
 
-
-
+  
   /**
    * STATS
    */
@@ -1566,4 +1564,99 @@ body {
 .active-link{
   color: var(--kappel);
 }
+
+
+@media (max-width: 1200px) {
+  .testimonial-text {
+    width: 90%;
+  }
+
+  .banner-heading {
+    font-size: 35px;
+    width: 70%;
+  }
+}
+
+
+@media (max-width: 993px) {
+
+  .hero-content {
+    width: 100%;
+  }
+  .section-title {
+    text-align: left;
+  }
+
+  .hero-text {
+    text-align: left;
+  }
+
+  .banner-container {
+    flex-direction: column;
+  }
+
+  .banner-heading {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 765px) {
+  .video-section {
+    padding: 60px 15px;
+  }
+  .video-container {
+    height: 350px;
+    width: 90%;
+    margin: auto;
+  }
+  .testimonial-text {
+    width: 100%;
+  }
+
+  .section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .hero {
+    padding: 150px 15px;
+  }
+
+  .banner {
+    padding: 25px 15px;
+  }
+
+  .banner-container {
+    padding: 25px;
+  }
+
+  .banner-heading {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+}
+
+
+
+
+@media (max-width: 580px) {
+
+  .video-section {
+    padding: 60px 15px;
+  }
+  .video-container {
+    height: 350px;
+    width: 100%;
+    margin: auto;
+  }
+  
+}
+
+
+
 
